@@ -1,8 +1,8 @@
 /**Google Fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
-  font-family: "Lora", serif;
+  font-family: "poppins", serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -55,17 +55,19 @@ header.shadow {
   transition: 0.4s;
 }
 header.shadow .logo {
+  font-family: "lora";
   color: var(--text-color);
 }
-header.shadow .login {
+/* header.shadow .login {
   color: var(--text-color);
-}
+} */
 
 header.shadow input {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: var(--text-color);
+  color: var(--bg-color);
 }
 header.shadow button {
+  background: var(--second-color);
   color: var(--text-color);
 }
 .search-container {
@@ -87,12 +89,12 @@ button {
   font-weight: 600;
   border-radius: 4px;
   border: 2px;
-  background: var(--second-color);
-  color: var(--bg-color);
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
 button:hover {
-  background: hsla(193, 98%, 54%, 0.734);
+  background-color: #33c2c6; /* Lighten the color on hover */
   transition: 0.3s;
 }
 .nav {
@@ -103,20 +105,24 @@ button:hover {
 }
 .logo {
   font-size: 1.5rem;
+  font-family: "lora";
+
   font-weight: 700;
   color: var(--bg-color);
 }
 .logo span {
+  font-family: "lora";
+
   color: var(--second-color);
 }
-.login {
+/* .login {
   padding: 8px 14px;
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 4px;
   background: var(--second-color);
   color: var(--bg-color);
-}
+} */
 .login:hover {
   background: hsla(193, 98%, 54%, 0.734);
   transition: 0.3s;
@@ -136,6 +142,7 @@ button:hover {
 }
 .home-title {
   font-size: 3.5rem;
+  font-family: "lora";
   /** To remain the title in  lines*/
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -160,6 +167,12 @@ button:hover {
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
+}
+.filter-item:hover {
+  transition: 0.4s;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background-color: #33c2c6; /* Lighten the color on hover */
 }
 .active-filter {
   background: var(--second-color);
@@ -190,6 +203,8 @@ button:hover {
 
 .category {
   padding-top: 10px;
+  font-family: "lora";
+
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
