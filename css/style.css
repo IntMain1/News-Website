@@ -83,7 +83,7 @@ input {
   color: var(--bg-color);
 }
 
-button {
+.button {
   padding: 8px 14px;
   text-transform: uppercase;
   font-weight: 600;
@@ -93,7 +93,7 @@ button {
   color: var(--text-color);
 }
 
-button:hover {
+.button:hover {
   background-color: #33c2c6; /* Lighten the color on hover */
   transition: 0.3s;
 }

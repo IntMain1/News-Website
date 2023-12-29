@@ -1,5 +1,5 @@
-let str = ``;
 const searchNews = async (q) => {
+  let str = ``;
   const url =
     "https://newsapi.org/v2/everything?" +
     "pageSize=20&" +

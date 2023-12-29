@@ -7,9 +7,9 @@ const category = [
   "technology",
   "science",
 ];
-let str = ``;
 
 const fetchNews = async () => {
+  let str = ``;
   for (var i = 0; i < category.length; i++) {
     const url =
       "https://newsapi.org/v2/top-headlines?" +
@@ -49,8 +49,3 @@ const fetchNews = async () => {
   }
 };
 fetchNews();
-search.addEventListener("click", (e) => {
-  e.preventDefault();
-  let query = searchInput.value;
-  searchNews(query);
-});
