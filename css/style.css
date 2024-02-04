@@ -75,14 +75,23 @@ header.shadow button {
 }
 
 input {
+  max-width: 200px;
   padding: 8px 14px;
   border-radius: 4px;
   font-size: 16px;
   border: 2px;
   background-color: var(--text-color);
   color: var(--bg-color);
+  transition: max-width 200ms ease;
 }
-
+@media (min-width: 550px) {
+  input {
+    max-width: 300px;
+  }
+}
+.search-container {
+  gap: 0.875rem;
+}
 .button {
   padding: 8px 14px;
   text-transform: uppercase;
@@ -204,7 +213,6 @@ input {
 .category {
   padding-top: 10px;
   font-family: "lora";
-
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
